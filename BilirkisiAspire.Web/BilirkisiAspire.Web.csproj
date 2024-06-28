@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BilirkisiAspire.ServiceDefaults\BilirkisiAspire.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

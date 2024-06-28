@@ -2,13 +2,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35017.193
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilirkisiAspire.AppHost", "BilirkisiAspire.AppHost\BilirkisiAspire.AppHost.csproj", "{2885200F-0671-4DCF-AC64-F2F32156BDE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilirkisiAspire.AppHost", "BilirkisiAspire.AppHost\BilirkisiAspire.AppHost.csproj", "{2885200F-0671-4DCF-AC64-F2F32156BDE8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilirkisiAspire.ServiceDefaults", "BilirkisiAspire.ServiceDefaults\BilirkisiAspire.ServiceDefaults.csproj", "{131D306F-7B8D-4DE6-92C0-E5FBE84A5C64}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilirkisiAspire.ApiService", "BilirkisiAspire.ApiService\BilirkisiAspire.ApiService.csproj", "{3F835B46-3E9F-4DA7-B982-2BDADD185120}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilirkisiAspire.Web", "BilirkisiAspire.Web\BilirkisiAspire.Web.csproj", "{608131CB-96B7-4534-91AC-6F6E9EA3BC81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{58D9DE57-EC43-42AE-BDBF-30F77C7A9341}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{608131CB-96B7-4534-91AC-6F6E9EA3BC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{608131CB-96B7-4534-91AC-6F6E9EA3BC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{608131CB-96B7-4534-91AC-6F6E9EA3BC81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D9DE57-EC43-42AE-BDBF-30F77C7A9341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D9DE57-EC43-42AE-BDBF-30F77C7A9341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D9DE57-EC43-42AE-BDBF-30F77C7A9341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D9DE57-EC43-42AE-BDBF-30F77C7A9341}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
