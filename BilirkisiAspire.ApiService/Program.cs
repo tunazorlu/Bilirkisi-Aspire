@@ -1,7 +1,7 @@
 using BilirkisiAspire.ApiService.Data;
+using BilirkisiAspire.Shared.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Shared.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

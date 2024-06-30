@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilirkisiAspire.ApiService"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilirkisiAspire.Web", "BilirkisiAspire.Web\BilirkisiAspire.Web.csproj", "{608131CB-96B7-4534-91AC-6F6E9EA3BC81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{58D9DE57-EC43-42AE-BDBF-30F77C7A9341}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilirkisiAspire.Shared", "Shared\BilirkisiAspire.Shared.csproj", "{58D9DE57-EC43-42AE-BDBF-30F77C7A9341}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

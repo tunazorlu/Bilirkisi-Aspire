@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Shared.Models
+﻿namespace BilirkisiAspire.Shared.Models
 {
     public class HizmetSuresi
     {

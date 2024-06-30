@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using BilirkisiAspire.ApiService.Mappings;
+using BilirkisiAspire.Shared.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Shared.Models;
 
 namespace BilirkisiAspire.ApiService.Data
 {
@@ -20,6 +21,10 @@ namespace BilirkisiAspire.ApiService.Data
         public DbSet<Tanik> Taniklar { get; set; }
         public DbSet<UcretBordrosu> UcretBordrolari { get; set; }
         public DbSet<UcretHesaplama> UcretHesaplamalari { get; set; }
-        
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new DavaciMap());
+        }
     }
 }

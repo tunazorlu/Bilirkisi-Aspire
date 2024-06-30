@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Shared.Models
+namespace BilirkisiAspire.Shared.Models
 {
     public class AppUser : IdentityUser
     {

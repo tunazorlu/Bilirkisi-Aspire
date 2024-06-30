@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Shared.Models
+﻿namespace BilirkisiAspire.Shared.Models
 {
     public class EksikGunBildirimi
     {

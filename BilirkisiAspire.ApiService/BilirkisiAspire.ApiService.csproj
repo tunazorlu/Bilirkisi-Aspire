@@ -22,11 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BilirkisiAspire.ServiceDefaults\BilirkisiAspire.ServiceDefaults.csproj" />
-    <ProjectReference Include="..\Shared\Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Mappings\" />
+    <ProjectReference Include="..\Shared\BilirkisiAspire.Shared.csproj" />
   </ItemGroup>
 
 </Project>

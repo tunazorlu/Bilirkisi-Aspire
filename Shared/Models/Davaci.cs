@@ -1,9 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using BilirkisiAspire.Shared.Models.EntityBase;
 
-namespace Shared.Models
+namespace BilirkisiAspire.Shared.Models
 {
-    public class Davaci
+    public class Davaci : EntityBase.EntityBase
     {
         public int DavaciId { get; set; }
         public string Ad { get; set; }
