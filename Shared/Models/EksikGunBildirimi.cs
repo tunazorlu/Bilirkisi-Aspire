@@ -1,6 +1,6 @@
 ﻿namespace BilirkisiAspire.Shared.Models
 {
-    public class EksikGunBildirimi
+    public class EksikGunBildirimi : EntityBase.EntityBase 
     {
         public int? EksikGunBildirimiId { get; set; }
         public int? EksikGunBildirilenAy { get; set; }

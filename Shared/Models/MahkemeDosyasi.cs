@@ -3,18 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BilirkisiAspire.Shared.Models
 {
-    public class MahkemeDosyasi
+    public class MahkemeDosyasi : EntityBase.EntityBase
     {
-        [Key]
         public int MahkemeDosyasiId { get; set; }
 
-        [Display(Name = "Mahkeme İli")]
         public string MahkemeIli { get; set; }
 
-        [Display(Name = "Mahkeme Sayısı")]
         public int MahkemeSayisi { get; set; }
         private int _year;
-        [Display(Name = "Dosya Yılı")]
         public int DosyaYili
         {
             get { return _year; }
@@ -31,20 +27,11 @@ namespace BilirkisiAspire.Shared.Models
                 }
             }
         }
-
-        [Display(Name = "Esas No")]
         public int EsasNo { get; set; }
-
-        [Display(Name = "Kayıt Tarihi")]
         public DateTime KayitTarihi { get; set; }
-        [Display(Name = "Teslim Tarihi")]
-        public DateOnly TeslimTarihi { get; set; }
-
-        [ForeignKey("Davaci")]
+        public DateTime TeslimTarihi { get; set; }
         public int? DavaciId { get; set; }
         public virtual Davaci? Davaci { get; set; }
-
-        [ForeignKey("Ücret Hesaplama")]
         public int? UcretHesaplamaId { get; set; }
         public virtual UcretHesaplama? UcretHesaplama { get; set; }
         public virtual List<Davali>? Davalilar { get; set; } = new List<Davali>();

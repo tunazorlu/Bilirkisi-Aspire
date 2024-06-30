@@ -1,6 +1,6 @@
 ﻿namespace BilirkisiAspire.Shared.Models
 {
-    public class Davali
+    public class Davali : EntityBase.EntityBase
     {
         public int? DavaliId { get; set; }
         public string? IsimYaDaUnvan { get; set; }
