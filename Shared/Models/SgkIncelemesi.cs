@@ -6,9 +6,9 @@ namespace BilirkisiAspire.Shared.Models
     {
         public int? SgkIncelemesiId { get; set; }
         [Display(Name = "Sigorta İşe Giriş Tarihi")]
-        public DateOnly? SigortaIseGirisTarihi { get; set; }
+        public DateTime? SigortaIseGirisTarihi { get; set; }
         [Display(Name = "Sigorta İşten Ayrılış Tarihi")]
-        public DateOnly? SigortaIstenAyrilisTarihi { get; set; }
+        public DateTime? SigortaIstenAyrilisTarihi { get; set; }
         [Display(Name = "Sigorta Sicil No")]
         public string? SigortaSicilNo { get; set; }
 
