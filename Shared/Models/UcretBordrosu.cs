@@ -14,27 +14,22 @@ namespace BilirkisiAspire.Shared.Models
         [Display(Name = "Ay")]
         public int Ay { get; set; }
 
-        [Column(TypeName = "decimal(8, 2)")]
         [Display(Name = "Ucret")]
         public decimal Ucret { get; set; }
 
-        [Column(TypeName = "decimal(8, 2)")]
         [Display(Name = "Fazla Çalışma")]
         public decimal FazlaCalisma { get; set; }
-
-        [Column(TypeName = "decimal(8, 2)")]
+        
         [Display(Name = "UBGT")]
         public decimal UBGT { get; set; }
-
-        [Column(TypeName = "decimal(8, 2)")]
+       
         [Display(Name = "Prim")]
         public decimal Prim { get; set; }
-        [Column(TypeName = "decimal(8, 2)")]
-
+       
         public decimal YemekUcreti { get; set; }
-        [Column(TypeName = "decimal(8, 2)")]
+        
         public decimal YolUcreti { get; set; }
-        [Column(TypeName = "decimal(8, 2)")]
+
         [Display(Name = "Izin")]
         public decimal Izin { get; set; }
 
