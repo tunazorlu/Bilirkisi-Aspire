@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BilirkisiAspire.ApiService.Mappings
 {
-    public class TanikMap : IEntityTypeConfiguration<PuantajTanikKaydi>
+    public class TanikMap : IEntityTypeConfiguration<Tanik>
     {
         public void Configure(EntityTypeBuilder<Tanik> builder)
         {
@@ -17,11 +17,6 @@ namespace BilirkisiAspire.ApiService.Mappings
             builder.Property(t => t.Ikramiye).HasMaxLength(9);
             builder.Property(t => t.DigerOdemeler).HasMaxLength(9);
             builder.Property(t => t.HaftalikCalismaGunu).HasMaxLength(9);
-            builder.Property(t => t.Ay).IsRequired();
-            builder.Property(t => t.Yil).IsRequired();
-            builder.Property(t => t.FazlaCalisma).IsRequired();
-            builder.Property(t => t.UBGT).IsRequired();
-            builder.Property(t => t.Izin).IsRequired();
             builder.HasOne(t => t.MahkemeDosyasi).WithMany(t=> t.Taniklar).HasForeignKey(t=>t.MahkemeDosyasiId);
         }
     }
