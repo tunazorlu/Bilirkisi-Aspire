@@ -14,7 +14,7 @@ builder.Services.AddProblemDetails();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddIdentity<AppUserRole, AppUserRole>()
+builder.Services.AddIdentity<AppUser, AppUserRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 
@@ -34,10 +34,10 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.UseExceptionHandler();
 
-app.MapIdentityApi<AppUser>();
+/*app.MapIdentityApi<AppUser>();*/
 
 app.UseHttpsRedirection();
-/*app.MapDefaultEndpoints();*/
+app.MapDefaultEndpoints();
 
 app.UseAuthorization();
 
