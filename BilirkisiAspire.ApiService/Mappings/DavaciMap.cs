@@ -12,8 +12,6 @@ namespace BilirkisiAspire.ApiService.Mappings
             builder.Property(t => t.DavaciId).ValueGeneratedOnAdd();
             builder.Property(t => t.Ad).HasMaxLength(50).IsRequired();
             builder.Property(t => t.Soyad).HasMaxLength(50).IsRequired();
-            builder.Property(t => t.Ad).IsRequired();
-            builder.Property(t => t.Soyad).IsRequired();
             builder.Property(t => t.DilekceOzeti).IsRequired();
             builder.Property(t => t.TemelUcret).HasColumnType("decimal(9,2)");
             builder.Property(t => t.YemekUcreti).HasColumnType("decimal(9,2)");
